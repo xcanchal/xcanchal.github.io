@@ -12,6 +12,7 @@ ul, li {
 #index {
   display: flex;
   background: #f8f8f8;
+  justify-content: center;
 }
 
 .portrait {
@@ -23,17 +24,7 @@ ul, li {
 .column {
   display: flex;
   align-items: center;
-}
-
-.column-left {
-  flex: 1;
-  justify-content: flex-end;
-}
-
-.column-right {
-  flex: 2;
-  padding: 0 5em 0 0;
-  justify-content: center;
+  margin: 0 40px;
 }
 
 .column-right .text {
