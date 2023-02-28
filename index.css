@@ -98,19 +98,6 @@ ul, li {
     flex-direction: column;
   }
 
-  .column-left {
-    padding: 3em 0 2em 0;
-    justify-content: center;
-    flex: initial;
-  }
-
-  .column-right {
-    padding: 0 10%;
-    justify-content: center;
-    text-align: center;
-    flex: initial;
-  }
-
   .text h1 {
     font-size: 2.3em;
   }
