@@ -98,6 +98,10 @@ ul, li {
     flex-direction: column;
   }
 
+  .portrait {
+    margin-bottom: 20px;
+  }
+
   .text {
     text-align: center;
   }
