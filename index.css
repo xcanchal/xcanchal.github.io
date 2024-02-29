@@ -127,6 +127,7 @@ section {
 
       img {
         width: 100%;
+        height: auto;
       }
 
       .project__texts {
