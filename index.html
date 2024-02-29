@@ -9,30 +9,44 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  <div id="index">
-    <div class="column column-left">
-      <img src="portrait.png" class="portrait" />
-    </div>
-    <div class="column column-right">
-      <div class="text">
-          <h1>Xavier Canchal</h1>
-          <p class="bio">Software engineer based in Barcelona.</p>
-          <small>Get in touch: <a href="mailto:xaviercanchal@gmail.com?Subject=Hello Xavier!">xaviercanchal@gmail.com</a></small>
-          <ul class="social">
-            <li class="social-item social-item-linkedin">
-              <a href="https://www.linkedin.com/in/xaviercanchal" target="_blank"><img src="linkedin.svg" /></a>
-            </li>
-            <li class="social-item social-item-github">
-              <a href="https://www.github.com/xcanchal" target="_blank"><img src="github.svg" /></a>
-            </li>
-            <li class="social-item social-item-dev">
-              <a href="https://dev.to/xaviercanchal" target="_blank"><img src="devto.svg" /></a>
-            </li>
-            <li class="social-item social-item-x">
-              <a href="https://x.com/xcanchal" target="_blank"><img src="x.svg" /></a>
-            </li>
-          </ul>
+  <main id="index">
+    <div class="container">
+      <section class="bio">
+        <div class="column column-left column-image">
+          <img src="portrait.png" class="portrait" />
+        </div>
+        <div class="column column-right column-text">
+            <h1>Xavier Canchal</h1>
+            <p>Software engineer based in Barcelona.</p>
+            <p><small>Get in touch: <a href="mailto:xaviercanchal@gmail.com?Subject=Hello Xavier!">xaviercanchal@gmail.com</a></small></p>
+            <ul class="social">
+              <li class="social-item social-item-x">
+                <a href="https://x.com/xcanchal" target="_blank"><img src="x.svg" /></a>
+              </li>
+              <li class="social-item social-item-linkedin">
+                <a href="https://www.linkedin.com/in/xaviercanchal" target="_blank"><img src="linkedin.svg" /></a>
+              </li>
+              <li class="social-item social-item-dev">
+                <a href="https://dev.to/xaviercanchal" target="_blank"><img src="devto.svg" /></a>
+              </li>
+              <li class="social-item social-item-github">
+                <a href="https://www.github.com/xcanchal" target="_blank"><img src="github.svg" /></a>
+              </li>
+            </ul>
+        </section>
+        <section class="projects">
+          <h2>Projects</h2>
+          <div class="project">
+            <a href="https://www.the-planning-poker.com" target="_blank">
+              <img src="posters/the-planning-poker.jpeg" />
+              <div class="project__texts">
+                <p class="project__title"><strong>The Planning Poker</strong></h3>
+                  <p class="project__summary">ThePlanningPoker allows remote teams to vote their sprint tasks collaboratively and in real-time, as if they were in the same office.</p>
+              </div>
+            </a>
+          </div>
+        </section>
       </div>
-    </div>
+    </main>
 </div>
 </body>
