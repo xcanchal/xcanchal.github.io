@@ -46,7 +46,8 @@ p {
 }
 
 a {
-  color: #fd7c48;
+  /*color: #fd7c48;*/
+  color: #861fda;
   text-decoration: none;
 
   &:hover, &:active {
