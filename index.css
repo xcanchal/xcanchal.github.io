@@ -4,7 +4,7 @@ html, body, #index {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: monospace;
+  font-family: "Space Grotesk", "monospace", "sans serif";
   background-color: #f8f8f8;
 }
 
@@ -148,15 +148,15 @@ h2 {
   background: #f6f3ff;
   position: absolute;
   bottom: 0;
-  transform: translateY(72px);
+  transform: translateY(68px);
   transition: all 0.2s;
 }
 .project__title {
-  font-size: 0.9rem;
   color: #861fda;
+  font-weight: 500;
 }
 .project__summary {
-  font-size: 0.85em;
+  font-size: 0.8rem;
   line-height: 1.4em;
   font-family: Helvetica, Arial, sans-serif;
   color: #75449d;
