@@ -1,4 +1,6 @@
-html, body, #index {
+html,
+body,
+#index {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -14,19 +16,15 @@ html, body, #index {
   flex-direction: column;
 }
 
-h1, h2, h3 {
-  color: #444;
+h1,
+h2,
+h3 {
+  color: #2e2e2e;
 }
 
- h1 {
+h1 {
   font-size: 3em;
   margin: 0;
-  /* background-image: linear-gradient(to right, rgba(255, 138, 65, 0.88) 0%, rgba(255, 138, 65, 0.88) 100%); */
-  background-position: 0 0.7em;
-  background-repeat: repeat-x;
-  background-size: 1px 15px;
-  width: auto;
-  display: inline-block;
 }
 
 h2 {
@@ -37,7 +35,8 @@ h3 {
   font-size: 1.5em;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -46,11 +45,11 @@ p {
 }
 
 a {
-  /*color: #fd7c48;*/
   color: #861fda;
   text-decoration: none;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     text-decoration: underline;
   }
 }
@@ -64,16 +63,16 @@ section {
   align-items: center;
   padding: 3em 0;
   border-bottom: 1px solid #eee;
-  /* 
-  position: fixed;
-  background-color: rgba(0,0,0,.05);
-  left: 0;
-  right: 0;
-  height: 350px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
 
   .portrait {
-    width: 10em;
-    height: 10em;
+    width: 120px;
+    height: 120px;
     border-radius: 100%;
   }
 }
@@ -83,14 +82,25 @@ section {
 }
 
 .bio .column-text {
-  max-width: 500px;
+  width: 100%;
+  max-width: 768px;
+  display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.bio .column-text p+p {
-  margin: 0;
+.bio .column-text p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
 }
+
 
 .bio .column-image {
   align-items: center;
@@ -115,61 +125,72 @@ h2 {
 }
 
 .project {
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
   border-radius: 25px;
-  width: 368px;
   overflow: hidden;
   background-color: white;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s;
   box-shadow: 0 0 0 1px #eee;
-  position: relative;
-  height: 252px;
-  position: relative;
-  overflow: hidden;
 }
+
 .project a {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
 }
-.project img {
+
+.project__poster {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
+
 .project:hover {
-  box-shadow: 0 0 0 2px #861fda;
+  box-shadow: 0 0 0 2px #191919;
 }
+
 .project:hover .project__texts {
   transform: translateY(0);
 }
 
 .project__texts {
-  padding: 0.25rem 1.5rem;
-  background: #f6f3ff;
-  position: absolute;
-  bottom: 0;
-  transform: translateY(68px);
-  transition: all 0.2s;
+  padding: 0.5rem 1.5rem;
 }
+
 .project__title {
-  color: #861fda;
+  color: #191919;
   font-weight: 500;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
+
+.project__favicon {
+  width: 24px;
+  height: 24px;
+}
+
 .project__summary {
-  font-size: 0.8rem;
-  line-height: 1.4em;
+  font-size: 0.9rem;
+  color: gray;
   font-family: Helvetica, Arial, sans-serif;
-  color: #75449d;
 }
 
 .social {
   padding: 0;
-  margin-top: 20px;
+  margin: 0;
+
 }
+
 .social-item {
   display: inline-block;
   margin-right: 12px;
 }
+
 .social-item img {
   width: 24px;
   height: 24px;
@@ -178,7 +199,8 @@ h2 {
   transition: all .3s;
 }
 
-.social-item img:hover, .social-item img:active {
+.social-item img:hover,
+.social-item img:active {
   width: 24px;
   height: 24px;
   opacity: 1;
@@ -195,31 +217,38 @@ h2 {
   .bio h1 {
     font-size: 2em;
   }
+
   .bio .portrait {
     margin-bottom: 2em;
   }
+
   .bio .column-text {
     align-items: center;
     text-align: center;
   }
+
   .bio .column-text .social {
     margin-top: 2em;
   }
+
   .bio .column-image {
-    margin-right: 0; 
+    margin-right: 0;
   }
 
   .projects {
     padding: 0 1em;
   }
+
   .projects h2 {
     font-size: 1.5em;
     margin: 1.5em 0;
   }
+
   .projects .project {
-    border-radius: 15px; 
+    border-radius: 15px;
   }
+
   .project .project__texts {
     padding: 0 1rem;
-  } 
+  }
 }
