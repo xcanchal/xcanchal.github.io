@@ -16,12 +16,6 @@ body,
   flex-direction: column;
 }
 
-h1,
-h2,
-h3 {
-  color: #2e2e2e;
-}
-
 h1 {
   font-size: 3em;
   margin: 0;
@@ -97,7 +91,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1rem;
+  line-height: 1.75;
   font-family: 'Helvetica', 'Arial', 'sans-serif';
 }
 
@@ -115,20 +109,18 @@ section {
   align-items: center;
   position: relative;
   background-color: #f8f8f8;
-  max-width: 768px;
+  max-width: 624px;
   margin: 0 auto 3em auto;
 }
 
 h2 {
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0;
   text-align: center;
 }
 
 .project {
   display: flex;
-  flex: 1 1 300px;
-  flex-direction: column;
-  border-radius: 25px;
+  border-radius: 16px;
   overflow: hidden;
   background-color: white;
   cursor: pointer;
@@ -138,23 +130,19 @@ h2 {
 
 .project a {
   display: flex;
-  flex-direction: column;
   text-decoration: none;
 }
 
 .project__poster {
-  width: 100%;
-  height: 200px;
+  width: 180px;
   object-fit: cover;
-  filter: grayscale(1) blur(2px);
-}
-
-.project:hover .project__poster {
-  filter: grayscale(0) blur(0);
+  margin: 1rem;
+  margin-right: 0;
+  border-radius: 12px;
 }
 
 .project:hover {
-  box-shadow: 0 0 0 2px #191919;
+  box-shadow: 0 0 0 2px black;
 }
 
 .project:hover .project__texts {
@@ -163,10 +151,11 @@ h2 {
 
 .project__texts {
   padding: 0.5rem 1.5rem;
+  line-height: 1.5;
 }
 
 .project__title {
-  color: #191919;
+  color: black;
   font-weight: 500;
   font-size: 1.25rem;
   display: flex;
@@ -180,8 +169,8 @@ h2 {
 }
 
 .project__summary {
-  font-size: 0.9rem;
-  color: gray;
+  font-size: 1rem;
+  color: black;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -197,8 +186,8 @@ h2 {
 }
 
 .social-item img {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   color: grey;
   opacity: 0.5;
   transition: all .3s;
@@ -206,8 +195,6 @@ h2 {
 
 .social-item img:hover,
 .social-item img:active {
-  width: 24px;
-  height: 24px;
   opacity: 1;
 }
 
