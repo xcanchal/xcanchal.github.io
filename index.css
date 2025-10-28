@@ -246,7 +246,7 @@ h2 {
     padding: 1rem;
   }
   
-  .projects .project a img {
+  .projects .project .project__poster {
     width: 100%;
   }
 
