@@ -248,6 +248,7 @@ h2 {
   
   .projects .project .project__poster {
     width: 100%;
+    margin: 0;
   }
 
   .project .project__texts {
